@@ -18,6 +18,9 @@ export const ContactTab: React.FC = () => {
           <div className="flex items-center group">
             <span className="text-vscode-variable">github</span>: <a href="https://github.com/binaykumardas" target="_blank" rel="noreferrer" className="text-vscode-accent hover:underline">url("github.com/binaykumardas")</a>;
           </div>
+          <div className="flex items-center group">
+            <span className="text-vscode-variable">x</span>: <a href="https://x.com/binaykumardas96" target="_blank" rel="noreferrer" className="text-vscode-accent hover:underline">url("x.com/binaykumardas96")</a>;
+          </div>
         </div>
         <span className="text-vscode-text">{`}`}</span>
       </div>
