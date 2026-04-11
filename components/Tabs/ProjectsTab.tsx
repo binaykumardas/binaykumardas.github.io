@@ -6,20 +6,23 @@ const projects = [
     name: "Find Coffeemate Frontend",
     description: "Find your perfect dev partner for your project.",
     link: "https://findcoffeemate.com/",
+    status: "Going Live Soon",
     tags: ["Coffemate", "JavaScript", "React","developer","connection"]
   },
   {
     id: 1,
     name: "Skillora",
     description: "Skillora is a smart HR & Candidate Job Portal Management System designed to simplify hiring by bringing multiple job portals, candidates, and hiring workflows into one unified platform",
-    link: "https://github.com/binaykumardas/findcoffemate-backend",
+    link: "no link",
+    status: "In Development",
     tags: ["Skill", "JavaScript", "Node","Angular"]
   },
   {
     id: 2,
     name: "findMyPartner",
     description: "Find your perfect life partner.",
-    link: "https://github.com/binaykumardas/matrimony",
+    link: "no link",
+    status: "In Development",
     tags: ["Matrimony", "Springboot", "React"]
   }
 ];
