@@ -51,6 +51,9 @@ export const ProjectsTab: React.FC = () => {
               <span className="text-vscode-variable">"link"</span>: <a href={project.link} target="_blank" rel="noreferrer" className="text-vscode-string underline decoration-vscode-string cursor-pointer">"{project.link}"</a>,
             </div>
             <div>
+              <span className="text-vscode-variable">"status"</span>: <span className="text-vscode-string">"{project.status}"</span>,
+            </div>
+            <div>
               <span className="text-vscode-variable">"tags"</span>: <span className="text-purple-400">[</span>
               {project.tags.map((tag, i) => (
                 <span key={tag}>
