@@ -60,7 +60,6 @@
     --vscode-hover: 220 7% 18%;
 
     /* Syntax tokens */
-    /* These are inspired by the default VS Code Dark+ theme but tweaked for better contrast and vibrancy on the web. */
     --vscode-keyword: 210 56% 60%;       /* blue */
     --vscode-string: 17 47% 64%;         /* orange/peach */
     --vscode-function: 53 51% 77%;       /* yellow */
