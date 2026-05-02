@@ -84,6 +84,7 @@ export const EditorProvider: React.FC<{ children: ReactNode }> = ({ children }) 
   );
 };
 
+// Custom hook for consuming the editor context
 export const useEditor = () => {
   const ctx = useContext(EditorContext);
   if (!ctx) throw new Error("useEditor must be used within EditorProvider");
