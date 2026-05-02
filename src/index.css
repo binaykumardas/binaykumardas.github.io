@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================================
+   Design System — VS Code IDE Portfolio
+   All colors HSL. Dark theme is default; .light-theme overrides.
+   ========================================================================= */
+
+@layer base {
+  :root {
+    /* ===== Shadcn-compatible base tokens (Dark theme) ===== */
+    --background: 220 7% 12%;            /* editor bg */
+    --foreground: 220 14% 84%;
+
+    --card: 220 7% 14%;
+    --card-foreground: 220 14% 84%;
+
+    --popover: 220 7% 14%;
+    --popover-foreground: 220 14% 84%;
+
+    --primary: 207 100% 42%;             /* VS Code blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 6% 18%;
+    --secondary-foreground: 220 14% 84%;
+
+    --muted: 220 6% 18%;
+    --muted-foreground: 220 9% 55%;
+
+    --accent: 207 100% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 6% 22%;
+    --input: 220 6% 22%;
+    --ring: 207 100% 42%;
+
+    --radius: 0.625rem;
+
+    /* ===== VS Code IDE chrome (Dark) ===== */
+    --vscode-bg: 220 7% 12%;             /* #1e1e1e-ish */
+    --vscode-sidebar: 220 7% 14%;        /* #252526 */
+    --vscode-activity: 0 0% 20%;         /* #333333 */
+    --vscode-tab-active: 220 7% 12%;
+    --vscode-tab-inactive: 220 7% 17%;
+    --vscode-panel: 220 7% 12%;
+    --vscode-status-bar: 207 100% 42%;
+    --vscode-status-bar-fg: 0 0% 100%;
+    --vscode-text: 220 14% 84%;
+    --vscode-text-muted: 220 9% 55%;
+    --vscode-accent: 207 100% 50%;       /* brighter blue for headlines */
+    --vscode-selection: 210 51% 31%;
+    --vscode-line-highlight: 222 7% 20%;
+    --vscode-border: 0 0% 12%;
+    --vscode-hover: 220 7% 18%;
+
+    /* Syntax tokens */
+    --vscode-keyword: 210 56% 60%;       /* blue */
+    --vscode-string: 17 47% 64%;         /* orange/peach */
+    --vscode-function: 53 51% 77%;       /* yellow */
+    --vscode-comment: 100 32% 47%;       /* green */
+    --vscode-number: 91 35% 73%;
+    --vscode-type: 167 49% 55%;
+    --vscode-variable: 200 87% 81%;      /* light blue */
+
+    --vscode-icon-active: 0 0% 100%;
+    --vscode-icon-inactive: 220 9% 50%;
+
+    /* Semantic accents used across the site */
+    --hero-grad-from: 207 100% 50%;
+    --hero-grad-to: 198 93% 60%;
+    --status-green: 142 71% 45%;
+    --status-amber: 38 92% 55%;
+    --status-violet: 262 83% 65%;
+
+    --shadow-soft: 0 1px 2px hsl(0 0% 0% / 0.4);
+    --shadow-card: 0 8px 28px -8px hsl(0 0% 0% / 0.55);
+    --shadow-glow: 0 0 0 1px hsl(var(--vscode-accent) / 0.3), 0 12px 40px -12px hsl(var(--vscode-accent) / 0.45);
+
+    --grid-line: 220 6% 18%;
+  }
+
+  .light-theme {
+    --background: 0 0% 100%;
+    --foreground: 220 25% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 14%;
+
+    --primary: 207 100% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 25% 14%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 40%;
+
+    --accent: 207 100% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 207 100% 38%;
+
+    --vscode-bg: 0 0% 100%;
+    --vscode-sidebar: 220 17% 97%;
+    --vscode-activity: 220 16% 94%;
+    --vscode-tab-active: 0 0% 100%;
+    --vscode-tab-inactive: 220 16% 94%;
+    --vscode-panel: 0 0% 100%;
+    --vscode-status-bar: 207 100% 38%;
+    --vscode-status-bar-fg: 0 0% 100%;
+    --vscode-text: 220 25% 18%;
+    --vscode-text-muted: 220 9% 45%;
+    --vscode-accent: 207 100% 42%;
+    --vscode-selection: 207 90% 88%;
+    --vscode-line-highlight: 220 16% 94%;
+    --vscode-border: 220 13% 88%;
+    --vscode-hover: 220 16% 94%;
+
+    --vscode-keyword: 230 70% 45%;
+    --vscode-string: 12 70% 42%;
+    --vscode-function: 30 60% 38%;
+    --vscode-comment: 120 30% 38%;
+    --vscode-number: 25 70% 40%;
+    --vscode-type: 167 60% 35%;
+    --vscode-variable: 207 70% 40%;
+
+    --vscode-icon-active: 220 25% 14%;
+    --vscode-icon-inactive: 220 9% 50%;
+
+    --grid-line: 220 14% 92%;
+
+    --shadow-soft: 0 1px 2px hsl(220 25% 14% / 0.06);
+    --shadow-card: 0 8px 28px -8px hsl(220 25% 14% / 0.12);
+    --shadow-glow: 0 0 0 1px hsl(var(--vscode-accent) / 0.18), 0 12px 40px -12px hsl(var(--vscode-accent) / 0.25);
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+
+  html, body, #root { height: 100%; }
+
+  body {
+    @apply bg-vscode-bg text-vscode-text;
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    transition: background-color 250ms ease, color 250ms ease;
+  }
+
+  ::selection { background: hsl(var(--vscode-selection)); }
+
+  /* Scrollbars */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--vscode-text-muted) / 0.3);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: hsl(var(--vscode-text-muted) / 0.5); }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { scrollbar-width: none; }
+}
+
+@layer components {
+  /* Subtle dotted grid background for editor content area */
+  .editor-grid-bg {
+    background-image:
+      linear-gradient(hsl(var(--grid-line) / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--grid-line) / 0.5) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-position: -1px -1px;
+  }
+
+  /* Panel card used across tabs */
+  .ide-card {
+    @apply rounded-xl border bg-vscode-sidebar/60 backdrop-blur-sm;
+    border-color: hsl(var(--vscode-border) / 1);
+    box-shadow: var(--shadow-soft);
+    transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease, background-color 250ms ease;
+  }
+  .ide-card:hover {
+    border-color: hsl(var(--vscode-accent) / 0.5);
+    box-shadow: var(--shadow-card);
+    transform: translateY(-2px);
+  }
+
+  .gradient-text {
+    background-image: linear-gradient(135deg, hsl(var(--hero-grad-from)), hsl(var(--hero-grad-to)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono border;
+    border-color: hsl(var(--vscode-border));
+    background: hsl(var(--vscode-sidebar));
+    color: hsl(var(--vscode-text));
+    transition: all 200ms ease;
+  }
+  .chip:hover {
+    border-color: hsl(var(--vscode-accent) / 0.6);
+    color: hsl(var(--vscode-accent));
+    transform: translateY(-1px);
+  }
+
+  .icon-btn {
+    @apply inline-flex items-center justify-center h-10 w-10 rounded-lg border;
+    border-color: hsl(var(--vscode-border));
+    color: hsl(var(--vscode-text));
+    transition: all 200ms ease;
+  }
+  .icon-btn:hover {
+    color: hsl(var(--vscode-accent));
+    border-color: hsl(var(--vscode-accent) / 0.6);
+    background: hsl(var(--vscode-accent) / 0.08);
+  }
+  .icon-btn.is-active {
+    color: hsl(var(--vscode-accent));
+    border-color: hsl(var(--vscode-accent) / 0.7);
+    background: hsl(var(--vscode-accent) / 0.1);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-3 rounded-lg font-semibold text-sm;
+    background: linear-gradient(135deg, hsl(var(--hero-grad-from)), hsl(var(--hero-grad-to)));
+    color: hsl(0 0% 100%);
+    box-shadow: 0 8px 24px -10px hsl(var(--hero-grad-from) / 0.6);
+    transition: transform 200ms ease, box-shadow 200ms ease, filter 200ms ease;
+  }
+  .btn-primary:hover { transform: translateY(-2px); filter: brightness(1.08); box-shadow: 0 14px 30px -10px hsl(var(--hero-grad-from) / 0.7); }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-5 py-3 rounded-lg font-semibold text-sm border;
+    border-color: hsl(var(--vscode-border));
+    color: hsl(var(--vscode-text));
+    background: hsl(var(--vscode-sidebar));
+    transition: all 200ms ease;
+  }
+  .btn-ghost:hover { border-color: hsl(var(--vscode-accent) / 0.6); color: hsl(var(--vscode-accent)); transform: translateY(-2px); }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium;
+  }
+  .pill-green { background: hsl(var(--status-green) / 0.12); color: hsl(var(--status-green)); }
+  .pill-amber { background: hsl(var(--status-amber) / 0.14); color: hsl(var(--status-amber)); }
+  .pill-violet { background: hsl(var(--status-violet) / 0.14); color: hsl(var(--status-violet)); }
+
+  .pulse-dot {
+    @apply relative inline-flex h-2 w-2 rounded-full;
+    background: hsl(var(--status-green));
+  }
+  .pulse-dot::after {
+    content: "";
+    position: absolute; inset: 0;
+    border-radius: 9999px;
+    background: hsl(var(--status-green));
+    opacity: 0.6;
+    animation: pulse-ring 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 0.6; }
+    80%, 100% { transform: scale(2.4); opacity: 0; }
+  }
+
+  .syntax-keyword  { color: hsl(var(--vscode-keyword)); }
+  .syntax-string   { color: hsl(var(--vscode-string)); }
+  .syntax-fn       { color: hsl(var(--vscode-function)); }
+  .syntax-comment  { color: hsl(var(--vscode-comment)); }
+  .syntax-num      { color: hsl(var(--vscode-number)); }
+  .syntax-type     { color: hsl(var(--vscode-type)); }
+  .syntax-var      { color: hsl(var(--vscode-variable)); }
+
+  .line-numbers {
+    counter-reset: line;
+  }
+  .line-numbers > .ln {
+    counter-increment: line;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 1rem;
+  }
+  .line-numbers > .ln::before {
+    content: counter(line);
+    color: hsl(var(--vscode-text-muted) / 0.6);
+    text-align: right;
+    user-select: none;
+  }
+
+  .fade-in-up { animation: fade-in-up 600ms ease-out both; }
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .blink-caret::after {
+    content: "▍";
+    margin-left: 2px;
+    color: hsl(var(--vscode-accent));
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+}
