@@ -15,7 +15,7 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     id: 0,
-    name: "Find Coffeemate Frontend",
+    name: "findcoffeemate",
     description: "Find your perfect dev partner for your project.",
     link: "https://findcoffeemate.com/",
     status: "soon",
