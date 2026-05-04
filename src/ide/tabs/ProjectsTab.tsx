@@ -18,8 +18,8 @@ const PROJECTS: Project[] = [
     name: "findcoffeemate",
     description: "Find your perfect dev partner for your project.",
     link: "https://findcoffeemate.com/",
-    status: "soon",
-    statusLabel: "Going Live Soon",
+    status: "live",
+    statusLabel: "Live",
     tags: ["Coffeemate", "JavaScript", "React", "Developer", "Connection"],
   },
   {
