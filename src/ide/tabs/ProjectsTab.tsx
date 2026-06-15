@@ -24,21 +24,21 @@ const PROJECTS: Project[] = [
   },
   {
     id: 1,
+    name: "findMyMatrimony",
+    description: "Find your perfect life partner.",
+    link: "https://www.findmymatrimony.com",
+    status: "soon",
+    statusLabel: "Coming Soon",
+    tags: ["Matrimony", "Spring Boot", "React"],
+  },
+  {
+    id: 2,
     name: "Skillora",
     description: "A smart HR & candidate job-portal management system that unifies multiple job portals, candidates, and hiring workflows into one platform.",
     link: null,
     status: "dev",
     statusLabel: "In Development",
     tags: ["Skill", "JavaScript", "Node", "Angular"],
-  },
-  {
-    id: 2,
-    name: "findMyPartner",
-    description: "Find your perfect life partner.",
-    link: null,
-    status: "dev",
-    statusLabel: "In Development",
-    tags: ["Matrimony", "Spring Boot", "React"],
   },
 ];
 
