@@ -10,7 +10,7 @@ const PILLARS = [
 
 const STACK = {
   Frontend: ["Angular", "React", "Tailwind", "Redux", "Bootstrap", "TypeScript"],
-  Backend:  ["Node.js", "Express", "REST APIs"],
+  Backend:  ["Node.js", "Express", "REST APIs", "Python", "Django"],
   Tools:    ["Git", "Webpack", "VS Code", "Vite"],
 };
 
