@@ -4,9 +4,9 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Binay Kumar Das — Frontend Specialist · Software Engineer";
+    document.title = "Binay | Binay Kumar Das — Product Owner · AI Enthusiast · Full Stack Developer";
     const metaDesc = document.querySelector('meta[name="description"]');
-    const desc = "Binay Kumar Das — Frontend Specialist based in Bhubaneswar, India. Interactive VS Code-themed portfolio showcasing projects in React, Angular, Node, and TypeScript.";
+    const desc = "Binay Kumar Das — Product Owner · AI Enthusiast · Full Stack Developer based in Bengaluru, India. Interactive VS Code-themed portfolio showcasing projects in React, Angular, Node, Express.js and TypeScript.";
     if (metaDesc) metaDesc.setAttribute("content", desc);
     else {
       const m = document.createElement("meta");
@@ -16,7 +16,7 @@ const Index = () => {
 
   return (
     <EditorProvider>
-      <h1 className="sr-only">Binay Kumar Das — Frontend Specialist & Software Engineer Portfolio</h1>
+      <h1 className="sr-only">Binay | Binay Kumar Das — Product Owner · AI Enthusiast · Full Stack Developer</h1>
       <Layout />
     </EditorProvider>
   );

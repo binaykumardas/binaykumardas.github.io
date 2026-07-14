@@ -5,7 +5,7 @@ export const SEO: React.FC = () => {
   const name = "Binay Kumar Das";
   const shortName = "Binay";
   const jobTitle = "Software Engineer";
-  const description = "Hi, I'm Binay Kumar Das, a Software Engineer based in Bhubaneswar, India. Welcome to my interactive VS Code themed developer portfolio.";
+  const description = "Hi, I'm Binay Kumar Das, a Software Engineer based in Bengaluru, India. Welcome to my interactive VS Code themed developer portfolio.";
   
   // Your exact GitHub Pages URL
   const siteUrl = "https://binaykumardas.github.io"; 
@@ -20,7 +20,7 @@ export const SEO: React.FC = () => {
     "url": siteUrl,
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Bhubaneswar",
+      "addressLocality": "Bengaluru",
       "addressCountry": "India"
     },
     "sameAs": [
@@ -36,7 +36,7 @@ export const SEO: React.FC = () => {
       <title>{`${shortName} | ${name} - ${jobTitle}`}</title>
       <meta name="title" content={`${shortName} | ${name} - ${jobTitle}`} />
       <meta name="description" content={description} />
-      <meta name="keywords" content="Binay, Binay Kumar Das, Binay portfolio, Software Engineer, React Developer, Frontend Developer, Bhubaneswar, India" />
+      <meta name="keywords" content="Binay, Binay Kumar Das, Binay portfolio, Software Engineer, React Developer, Frontend Developer, Product Owner, AI Enthusiast, Full Stack Developer, Bengaluru, India" />
       <meta name="author" content={name} />
       
       {/* Canonical Link */}

@@ -1,6 +1,17 @@
 import React from "react";
 import { Mail, Github, Linkedin, Twitter, MapPin, Send } from "lucide-react";
 
+const MediumIcon = ({ size = 18 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path d="M2.846 6.888a.917.917 0 0 0-.263-.874L.635 3.66V3.3h6.055l4.68 10.26L15.484 3.3h5.777v.36l-1.664 1.595a.487.487 0 0 0-.184.467v11.73a.487.487 0 0 0 .184.467l1.625 1.595v.36h-8.178v-.36l1.684-1.634c.165-.165.165-.214.165-.467V7.97l-4.684 11.864h-.633L4.107 7.97v7.98c-.045.334.066.671.302.91l2.19 2.656v.36H.385v-.36l2.19-2.656a1.12 1.12 0 0 0 .272-.91V6.888z"/>
+  </svg>
+);
+
 const Row: React.FC<{
   selector: string;
   property: string;
@@ -58,6 +69,7 @@ export const ContactTab: React.FC = () => {
         <SocialCard href="https://linkedin.com/in/binaykumardas" icon={<Linkedin size={18} />} label="LinkedIn" sub="linkedin.com/in/binaykumardas" />
         <SocialCard href="https://github.com/binaykumardas" icon={<Github size={18} />} label="GitHub" sub="github.com/binaykumardas" />
         <SocialCard href="https://x.com/binaykumardas96" icon={<Twitter size={18} />} label="X / Twitter" sub="x.com/binaykumardas96" />
+        <SocialCard href="https://medium.com/@binaykumardas96" icon={<MediumIcon size={18} />} label="Medium" sub="medium.com/@binaykumardas96"/>
       </div>
 
       {/* CSS-styled rows */}
@@ -66,7 +78,8 @@ export const ContactTab: React.FC = () => {
         <Row selector=".social-links" property="linkedin" value="linkedin.com/in/binaykumardas" href="https://linkedin.com/in/binaykumardas" />
         <Row selector=".social-links" property="github"   value="github.com/binaykumardas" href="https://github.com/binaykumardas" />
         <Row selector=".social-links" property="twitter"  value="x.com/binaykumardas96"   href="https://x.com/binaykumardas96" />
-        <Row selector="#location"     property="city"     value="Bhubaneswar, India" hint={<MapPin size={12} />} />
+        <Row selector=".social-links" property="medium" value="medium.com/@binaykumardas96" href="https://medium.com/@binaykumardas96"/>
+        <Row selector="#location"     property="city"     value="Bengaluru, India" hint={<MapPin size={12} />} />
       </div>
 
       <a

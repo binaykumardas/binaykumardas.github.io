@@ -67,9 +67,9 @@ export const HomeTab: React.FC = () => {
         <div className="line-numbers space-y-0.5">
           <div className="ln"><span><span className="syntax-keyword">const</span> <span className="syntax-fn">developer</span> <span className="syntax-keyword">=</span> {"{"}</span></div>
           <div className="ln"><span className="pl-4"><span className="syntax-var">name</span>: <span className="syntax-string">'Binay Kumar Das'</span>,</span></div>
-          <div className="ln"><span className="pl-4"><span className="syntax-var">location</span>: <span className="syntax-string">'Bhubaneswar, India'</span>,</span></div>
+          <div className="ln"><span className="pl-4"><span className="syntax-var">location</span>: <span className="syntax-string">'Bengaluru, India'</span>,</span></div>
           <div className="ln"><span className="pl-4"><span className="syntax-var">role</span>: <span className="syntax-string">'Senior Software Engineer'</span>,</span></div>
-          <div className="ln"><span className="pl-4"><span className="syntax-var">stack</span>: [<span className="syntax-string">'React'</span>, <span className="syntax-string">'Angular'</span>, <span className="syntax-string">'Node'</span>, <span className="syntax-string">'TypeScript'</span>],</span></div>
+          <div className="ln"><span className="pl-4"><span className="syntax-var">stack</span>: [<span className="syntax-string">'React'</span>, <span className="syntax-string">'Angular'</span>, <span className="syntax-string">'Node.js'</span>, <span className="syntax-string">'TypeScript'</span>, <span className="syntax-string">'Python'</span>],</span></div>
           <div className="ln"><span className="pl-4"><span className="syntax-var">passion</span>: <span className="syntax-string">'Crafting seamless digital experiences'</span>,</span></div>
           <div className="ln"><span>{"};"}</span></div>
         </div>
@@ -97,7 +97,7 @@ export const HomeTab: React.FC = () => {
 
       {/* Stats grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-        <Stat value="5+" label="Years Coding" />
+        <Stat value="6+" label="Years Coding" />
         <Stat value="10+" label="Projects Shipped" />
         <Stat value="8" label="Tech Stacks" />
         <Stat value="∞" label="Coffee Consumed" />

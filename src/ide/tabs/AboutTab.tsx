@@ -24,7 +24,7 @@ export const AboutTab: React.FC = () => {
 
       <p className="text-lg md:text-xl leading-relaxed text-vscode-text/90 max-w-4xl mb-16">
         Hi, I'm <span className="gradient-text font-semibold">Binay Kumar Das</span>. A software engineer based in
-        Bhubaneswar, India, with a deep passion for engineering products that feel intuitive, perform well, and
+        Bengaluru, India, with a deep passion for engineering products that feel intuitive, perform well, and
         solve real problems.
       </p>
 
