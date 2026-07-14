@@ -56,7 +56,7 @@ export const Terminal: React.FC = () => {
       case "whoami": response = ["binaykumardas"]; break;
       case "ls": response = ["src  public  node_modules  package.json  README.md  tsconfig.json"]; break;
       case "pwd": response = ["/Users/binaykumardas/Documents/portfolio-ide"]; break;
-      case "about": response = ["Binay Kumar Das — Frontend Specialist · Bhubaneswar, India"]; break;
+      case "about": response = ["Binay Kumar Das — Product Owner · AI Enthusiast · Full Stack Developer · Bengaluru, India"]; break;
       case "": break;
       default: response = [`zsh: command not found: ${trimmed}`];
     }
